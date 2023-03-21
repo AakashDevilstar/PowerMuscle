@@ -7,7 +7,6 @@ import Signup from './Auth/Signup';
 
 
 const App = () => (
-  
   <Box width="400px" sx={{ width: { xl: '1488px' } }} m="auto">
       <Homemain/>
      <Routes>

@@ -6,21 +6,6 @@ import {auth} from "../firebase"
 import "./signup.css"
 
 function Signup() {
-  const navigate=useNavigate();
-  const handleSubmit=async(e)=>{
-    // e.preventDefault();
-    // const mail=e.target[0].value;
-    // const password=e.target[1].value;
-    // console.log(auth);
-    // console.log(mail,password);
-    // try{
-      // const res=await signInWithEmailAndPassword(auth,mail,password)
-      navigate("/");
-    // }catch(err){
-      // console.log(err);
-    // }
-
-  }
   return (
     <div className='main'>
         <div className='phtot'>
@@ -30,7 +15,7 @@ function Signup() {
             <div className='formWrapper'>
                 <span className='logo'>PowerMuscle Gym</span>
                 <span className='title' style={{color:'orange'}}>Sign up</span>
-                <form onSubmit={handleSubmit}>
+                <form>
                     <input type='email' placeholder='Enter Email'/>
                     <input type='password' placeholder='Enter password'/>
                     <button>Sign up</button>
